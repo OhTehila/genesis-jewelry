@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -46,8 +47,11 @@ export default function Hero() {
         >
           תכשיטי יוקרה בסטנדרט אחר
         </p>
+        <br />
+        <br />
 
-        <button
+        <Link
+          href="/collections"
           style={{
             marginTop: "45px",
             background: "transparent",
@@ -70,7 +74,7 @@ export default function Hero() {
           }}
         >
           לצפייה בקולקציה
-        </button>
+        </Link>
       </div>
     </section>
   );
